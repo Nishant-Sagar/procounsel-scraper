@@ -1,0 +1,6 @@
+1. Run the command 
+python3 procounsel-scraper/scripts/get_all_colleges.py --base "https://collegedunia.com/university/25914-vellore-institute-of-technology-vit-university-vellore" --out "scraped_data" --max-pages 150
+
+
+2. Change the URL
+https://collegedunia.com/university/25914-vellore-institute-of-technology-vit-university-vellore
