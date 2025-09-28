@@ -31,19 +31,11 @@ cd procounsel-scraper
 
 ### macOS/Linux
 
-1. Make the shell script executable (first time only):
-
-```bash
-chmod +x run.sh
-```
-
-2. Run the setup script **using `source`**:
+1. Run the setup script **using `source`**:
 
 ```bash
 source run.sh
 ```
-
-> ⚠️ Important: On macOS/Linux, you must use `source` to keep the virtual environment active in your terminal. Using `./run.sh` will not keep it activated.
 
 * This script will:
 
@@ -51,7 +43,7 @@ source run.sh
   * Activate the virtual environment
   * Upgrade `pip` and install all dependencies from `requirements.txt`
 
-3. Verify activation:
+2. Verify activation:
 
 ```bash
 which python   # Should point to scrape/bin/python
@@ -74,9 +66,8 @@ run.bat
   * Activate the virtual environment
   * Upgrade `pip` and install dependencies from `requirements.txt`
 
-2. After the script runs, the environment is active in that terminal session.
 
-3. Verify activation:
+2. Verify activation:
 
 ```cmd
 where python   # Should point to scrape\Scripts\python.exe
@@ -87,13 +78,11 @@ pip list       # Should show installed packages
 
 ## 4. Running the Scraper
 
-Once the virtual environment is activated:
+Once the virtual environment is activated, replace the below code with the one in examples.txt file
 
 ```bash
 python scraper/your_scraper_file.py
 ```
-
-Replace `your_scraper_file.py` with the actual script name.
 
 ---
 
@@ -114,12 +103,6 @@ source scrape/bin/activate
 scrape\Scripts\activate.bat
 ```
 
-**Windows (PowerShell):**
-
-```powershell
-scrape\Scripts\Activate.ps1
-```
-
 * To **deactivate** the environment:
 
 ```bash
@@ -135,13 +118,6 @@ If you add new packages:
 ```bash
 pip install new_package
 pip freeze > requirements.txt
-```
-
-Then others can install the new packages via:
-
-```bash
-source run.sh      # macOS/Linux
-run.bat            # Windows
 ```
 
 ---
