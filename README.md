@@ -1,22 +1,13 @@
-<<<<<<< main
 # procounsel-scraper
 
 This repository contains a Python scraper that pulls data from a website. The setup is designed to make it easy for both macOS/Linux and Windows users to get started with **one command**.
-=======
-# ProCounsel Scraper
-
-A Python scraper to pull data from a website. Setup is fully automated.
->>>>>>> main
 
 ---
+
 ## 1. Prerequisites
 
 * **Python 3.9+** installed
-<<<<<<< main
 * **Git** installed (for cloning the repo)
-=======
-* **Git** installed
->>>>>>> main
 
 Check Python version:
 
@@ -36,7 +27,6 @@ cd procounsel-scraper
 
 ---
 
-<<<<<<< main
 ## 3. Setup Virtual Environment and Install Dependencies
 
 ### macOS/Linux
@@ -73,17 +63,11 @@ pip list       # Should show installed packages
 ### Windows (Command Prompt)
 
 1. Run the batch script:
-=======
-## 3. Setup and Run
-
-### Windows
->>>>>>> main
 
 ```cmd
 run.bat
 ```
 
-<<<<<<< main
 * This will:
 
   * Create a virtual environment (`scrape\`) if it doesn’t exist
@@ -163,29 +147,3 @@ run.bat            # Windows
 ---
 
 This README ensures **macOS/Linux and Windows users can easily set up and activate the environment**, and explains why macOS/Linux requires `source` for proper activation.
-=======
-### macOS/Linux
-
-```bash
-source run.sh
-```
-
-> ⚠️ On macOS/Linux, use `source` to activate the virtual environment in your terminal.
-
-* The scripts will automatically create a virtual environment, install dependencies, and run the scraper.
-
----
-
-## 4. Notes
-
-* To reactivate the environment later:
-
-**Windows:** `scrape\Scripts\activate.bat`
-**macOS/Linux:** `source scrape/bin/activate`
-
-* To deactivate: `deactivate`
-
----
-
-Your scraper will run automatically once the setup script finishes.
->>>>>>> main
